@@ -8,6 +8,6 @@
  go build -o bin/primes/client ./primes/client
 ```
 ```
- go build -o bin/primes/client ./primes/client
+ go build -o bin/primes/server ./primes/server
 
 ```
