@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package primes;
+
+option go_package = "github.com/ryblovAV/golang-training/primes/proto";
+
+message PrimesRequest {
+  int32 start_value = 1;
+}
+
+message PrimesResponse {
+  int32 result = 1;
+}
+
+service PrimesService {
+  rpc Primes(PrimesRequest) returns (stream PrimesResponse);
+}
