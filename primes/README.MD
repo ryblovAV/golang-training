@@ -9,5 +9,4 @@
 ```
 ```
  go build -o bin/primes/server ./primes/server
-
 ```
