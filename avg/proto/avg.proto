@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package avg;
+
+option go_package = "github.com/ryblovAV/golang-training/avg/proto";
+
+message AvgRequest {
+  double value = 1;
+}
+
+message AvgResponse {
+  double result = 1;
+}
+
+service AvgService {
+  rpc CalcAvg(stream AvgRequest) returns (AvgResponse);
+}
